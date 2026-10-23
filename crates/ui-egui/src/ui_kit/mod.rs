@@ -4,6 +4,7 @@
 mod actions;
 mod assistant;
 mod assistant_entry;
+mod attention;
 mod checks;
 #[cfg(test)]
 pub(crate) use checks::tests::{raster as test_raster, textures_update as test_textures_update};
@@ -47,6 +48,7 @@ pub(crate) use assistant::*;
 pub(crate) use assistant_entry::*;
 #[cfg(test)]
 pub(crate) use checks::tests::{raster as raster_ui, textures_update as update_test_textures};
+pub(crate) use attention::*;
 pub(crate) use checks::*;
 pub(crate) use choice::*;
 pub(crate) use color::*;
