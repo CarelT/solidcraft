@@ -11,7 +11,7 @@
 use std::path::Path;
 
 use serde_json::{Value, json};
-use solidcraft_doc::{DesignLink, FeatureKind};
+use solidcraft_doc::{DesignLink, Document, FeatureKind};
 
 use super::CommandSpec;
 use super::design_link::{absolute, resolve, stored};
