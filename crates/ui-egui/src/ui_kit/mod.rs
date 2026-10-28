@@ -46,9 +46,9 @@ pub(crate) use actions::*;
 pub use actions::{Button, button};
 pub(crate) use assistant::*;
 pub(crate) use assistant_entry::*;
+pub(crate) use attention::*;
 #[cfg(test)]
 pub(crate) use checks::tests::{raster as raster_ui, textures_update as update_test_textures};
-pub(crate) use attention::*;
 pub(crate) use checks::*;
 pub(crate) use choice::*;
 pub(crate) use color::*;
