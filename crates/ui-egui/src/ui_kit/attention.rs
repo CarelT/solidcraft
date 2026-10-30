@@ -4,9 +4,11 @@
 use crate::theme::Tokens;
 use egui::{Align2, Painter, Pos2, Rect, vec2};
 
-/// Where the mark sits on `target` (a button's or icon's rect).
+/// Where the mark sits on `target` (a button's or icon's rect): `space_3` in from its top-right
+/// corner. Tokens: space_3.
 pub(crate) fn attention_at(target: Rect) -> Pos2 {
-    target.right_top() + vec2(-3.0, 3.0)
+    let t = Tokens::get();
+    target.right_top() + vec2(-t.space_3, t.space_3)
 }
 
 /// The mark on `target`: a count when there is one (at most 9 shown), else a plain dot.
